@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(245, 245, 245);
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .container {
+            margin: 100px auto 20px;
+            /* Adjust margin to account for the fixed navbar */
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            background-color: rgb(94, 54, 54);
+            color: white;
+            padding: 10px;
+            font-size: 2rem;
+        }
+
+        .image-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h3 {
+            background-color: rgb(103, 82, 73);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .section p {
+            padding: 10px;
+            color: rgb(33, 33, 33);
+        }
+
+        footer {
+            background-color: rgb(170, 154, 154);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            color: rgb(8, 8, 8);
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+        }
+
+        nav {
+            border: 2px solid black;
+            background-color: rgb(83, 64, 39);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(241, 234, 234);
+        }
+
+        nav ul li:hover {
+            border: 4px solid rgb(11, 11, 11);
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: larger;
+        }
+
+        nav ul li+li {
+            margin-left: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-left: auto;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav ul li+li {
+                margin-left: 0;
+            }
+        }
+
+        nav ul {
+            padding: 5px;
+        }
+
+        nav ul li {
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+        .image-section{
+            display: flex;
+            justify-content: space-around;
+            font-weight: bolder;
+            text-align: left;
+            
+        }
+        
+      
+
+
+        .image-section img {
+            width: 20%;
+            height: auto;
+            /* border-radius: 7px; */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav>
+        <ul>
+            <li><a href="navbar.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="detail.html">DETAILS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="heading">
+    DETAILS 
+        </div>
+
+        <div class="image-section">
+            <img   src="bg4.png" alt="Autobiography Structure">
+            <p>DOB:March 5 2003👶🏽<br>Religion:Hinduism🕉️<br>Gender:Female👩🏾‍💻 <br>Address:Odisha,berhampur📍🗺️<br>Email:asneha151@gmail.com📩 <br>Graduation:B.Tech👩🏻‍💻📓✍🏻💡<br>College:NIST UNIVERSITY🏫 <br>Phone_no:9448676627📞
+            </p>
+        </div>
+
+        <div id="autobiography" class="section">
+            <h3>Autobiography</h3>
+            <p>I was born on a warm, sunny day in March (5 2003) in (berhampur📍🗺️), (India). I still live in place of
+                birth, India, and Schooling from DAV PUBLIC School. I live with my Mom,Dad,sister.
+               </p>
+        </div>
+
+        <div id="future" class="section">
+            <h3>Who I am in life</h3>
+            <p>My name is A. Sneha. I began my education at the age of four. In the fifth grade,  I won a prize in a kho-kho competition. After completing my matriculation, I participated in a summer internship, where I earned a couple of awards in speech competitions.</p>
+        </div>
+
+        <div id="life-meaning" class="section">
+            <h3>What’s my outlook on the future</h3>
+            <p>As a B.Tech student with a passion for software engineering, I am focused on developing the skills and knowledge . I envision a future where I can apply my technical expertise to solve complex problems, contribute to innovative projects, and continuously grow as a professional. .</p>
+        </div>
+
+        <div class="section">
+            <h3>What life means to me</h3>
+            <p>Life, to me, might mean a journey of growth, learning, and making a positive impact.</p>
+        </div>
+
+        <div id="conclusion" class="section">
+            <h3>Conclusion</h3>
+            <p>it means pursuing my passion for software engineering, overcoming challenges, and striving to make a positive impact on the world around me. Through dedication, persistence, and the support of my loved ones, I aim to shape a future that reflects my dreams and aspirations.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Sneha. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/a-sneha-76a9a426b/">LinkedIn</a></li>
+            <li><a href="https://github.com/Sneha4281">GitHub</a></li>
+            <li><a href="mailto:asneha151@gmail.com">Email Me: asneha151@gmail.com</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

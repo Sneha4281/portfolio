@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(8, 8, 8);
+        }
+
+        nav {
+            border: 2px solid black;
+            background-color: rgb(83, 64, 39);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(241, 234, 234);
+        }
+
+        nav ul li:hover {
+            border: 4px solid rgb(11, 11, 11);
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: larger;
+        }
+
+        nav ul li+li {
+            margin-left: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-left: auto;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav ul li+li {
+                margin-left: 0;
+            }
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 5px 0;
+            padding: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .leftsection,
+        .rightsection {
+            flex-grow: 1;
+        }
+
+        .leftsection {
+            color: rgb(220, 233, 244);
+            font-size: 3rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: center;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        footer {
+            background-color: rgb(170, 154, 154);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            color: rgb(8, 8, 8);
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+        }
+
+        .sec {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #735757;
+            width: 100%;
+            max-width: 250px;
+            border-radius: 7px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+        }
+
+        .content {
+            text-align: center;
+            height: 150px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leftsection {
+                font-size: 1.8rem;
+            }
+
+            .rightsection img {
+                max-width: 80%;
+            }
+
+            nav ul {
+                padding: 5px;
+            }
+
+            nav ul li {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+
+            .content {
+                font-size: 0.9rem;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header> -->
+        <nav>
+            <ul>
+                <li><a href="navbar.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="detail.html">DETAILS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    <!-- </header> -->
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi <br> I am A.Sneha<br> and <br> Software Engineer
+            </div>
+            <div class="rightsection">
+                <img src="bg3.jpeg" alt="loading">
+            </div>
+        </section>
+    </main>
+
+    <section class="sec">
+        <!-- card 1 -->
+        <div class="card">
+            <h6 style="text-align: center;color: white;">INTERESTED</h6>
+            <div class="image">
+                <img src="https://c8.alamy.com/comp/2G0YN9E/programmer-woman-coding-on-computer-coder-girl-2G0YN9E.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>CODING</h1>
+                <p>Coding is my passion. I enjoy solving problems using languages like Python. The process of building efficient software and constantly learning new technologies excites me, whether it's for web development or data analysis.</p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+            <h6 style="text-align: center;color: white;">INTERESTED</h6>
+            <div class="image">
+                <img src="https://cdn.triathlete.com/wp-content/uploads/2021/12/How-to-breathe-when-swimming.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>SWIMMING</h1>
+                <p>Swimming helps me relax and stay fit. It's a great way to clear my mind while building endurance and strength. I love the feeling of being in the water, whether it’s a casual swim or pushing myself during laps. It’s both a mental and physical refreshment.</p>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+            <h6 style="text-align: center;color: white;">INTERESTED</h6>
+            <div class="image">
+                <img src="pub.png" alt="">
+            </div>
+            <div class="content">
+                <h1>PUBLIC SPEAKING</h1>
+                <p>I enjoy engaging with diverse audiences on topics ranging from innovation to self-improvement. It challenges me to think on my feet, refine my message, and foster connections, making it an invaluable tool for personal and professional growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Sneha. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/a-sneha-76a9a426b/">LinkedIn</a></li>
+            <li><a href="https://github.com/Sneha4281">GitHub</a></li>
+            <li><a href="mailto:asneha151@gmail.com">Email Me: asneha151@gmail.com</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

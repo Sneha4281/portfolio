@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        /* body { */
+            /* font-family: Arial, sans-serif; */
+            /* background-color: #f1f1f1; */
+            /* color: #333; */
+            /* padding: 20px; */
+        /* } */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+
+
+
+        footer p {
+                font-size: 0.9rem;
+            }
+
+            nav ul li {
+                font-size: 0.8rem;
+            }
+        
+
+        footer {
+            background-color: rgb(170, 154, 154);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            color: rgb(8, 8, 8);
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+        }
+
+
+        nav {
+            border: 2px solid black;
+            background-color: rgb(83, 64, 39);
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(241, 234, 234);
+        }
+
+        nav ul li:hover {
+            border: 4px solid rgb(11, 11, 11);
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: larger;
+        }
+
+        nav ul li+li {
+            margin-left: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-left: auto;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav ul li+li {
+                margin-left: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="navbar.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="detail.html">DETAILS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:asneha151@gmail.com">asneha151@gmail.com</a></li>
+            <li><strong>Phone:</strong> +91-9348676627</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/a-sneha-76a9a426b/" target="_blank">linkedin.com/sneha/profile</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Sneha4281" target="_blank">github.com/sneha-github</a></li>
+        </ul>
+    </section>
+
+    <section id="social-media">
+        <h2>Social Media</h2>
+        <ul>
+            <li><strong>Instagram:</strong> <a href="https://twitter.com/your-profile" target="_blank">Sn.eha4281</a></li>
+            <li><strong>Portfolio:</strong> <a href="https://your-portfolio.com" target="_blank">your-portfolio.com</a></li>
+        </ul>
+    </section>
+
+    <section id="location">
+        <h2>Location</h2>
+        <p>Currently based in Berhampur, India. Open to remote work opportunities and relocation for the right role.</p>
+    </section>
+
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <!-- <form action="mailto:asneha151@gmail.com"  enctype="text/plain"> -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea  required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <section id="call-to-action">
+        <h2>Let's Work Together</h2>
+        <p>If you'd like to collaborate, discuss job opportunities, or just connect, feel free to reach out. I'm always open to learning and exploring new opportunities in the tech industry.</p>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Sneha. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/a-sneha-76a9a426b/">LinkedIn</a></li>
+            <li><a href="https://github.com/Sneha4281">GitHub</a></li>
+            <li><a href="mailto:asneha151@gmail.com">Email Me: asneha151@gmail.com</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
